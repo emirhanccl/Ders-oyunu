@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ders Oyunu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🎮 Ders Oyunu</h1>
+
+<div class="card">
+  <p>XP: <span id="xp">0</span></p>
+  <p>Level: <span id="level">1</span></p>
+</div>
+
+<div class="buttons">
+  <button onclick="study()">📚 1 Saat Çalışma (+100 XP)</button>
+  <button onclick="video1()">🎥 1 Saat Video (+80 XP)</button>
+  <button onclick="video2()">🎬 1.5 Saat Video (+140 XP)</button>
+  <button onclick="break10()">☕ 10 dk Mola (-40 XP)</button>
+  <button onclick="break30()">🛋️ 30 dk Mola (-80 XP)</button>
+  <button onclick="smoke()">🚬 Sigara (-20 XP)</button>
+</div>
+
+<h2>⏱️ Kronometre</h2>
+<p id="timer">00:00:00</p>
+<button onclick="startTimer()">Başlat</button>
+<button onclick="stopTimer()">Durdur</button>
+<button onclick="resetTimer()">Sıfırla</button>
+
+<script src="app.js"></script>
+</body>
+</html>
